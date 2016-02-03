@@ -40,8 +40,8 @@ header {
 
 #social {
 	position: fixed;
-	bottom: 5;
-	right: 5;
+	top: 10;
+	right: 10;
 }
 
 #logo {
