@@ -51,10 +51,9 @@ header {
 }
 
 #logo {
-	/*width: 200px;*/
     height: 40vh;
 	cursor: pointer;
-	margin: 0;
+	margin: 30px 0;
 }
 
 a {
@@ -63,7 +62,7 @@ a {
 
 h1 {
 	font-size: 100px;
-	padding: 40px 20px;
+	padding: 0 20px 40px 20px;
 	margin: 0;
 }
 
@@ -390,12 +389,16 @@ footer {
 		margin: 30px 0;
 	}
 	h1 {
-		font-size: 20vw;
+		font-size: 10vw;
+        text-align: center;
 	}
 	h2 {
-		font-size: 10vw;
+		font-size: 6vw;
 		text-align: center;
 	}
+    #logo {
+        height: 30vh;
+    }
 	.toggle-set * {
 		font-size: 16px;
 		width: 100px;
