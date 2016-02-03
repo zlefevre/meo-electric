@@ -19,17 +19,17 @@ $("#section3").click(function() {
 });
 
 $("#beta-interest").submit(function(event) {
-	$("#beta-full, #beta-full *, #pop-up-overlay").show(500);
+	$("#beta-full, #beta-full *, #pop-up-overlay").fadeIn(500);
 	event.preventDefault(); 
 	$("#full-email").val($("#interest-email").val());
 });
 
 $("#pop-up-overlay").click(function() {
-	$("#beta-full, #pop-up-overlay").hide(500);
+	$("#beta-full, #pop-up-overlay").fadeOut(500);
 });
 
 $("#beta-full").submit(function(event) {
     event.preventDefault();
 	alert("Thank you for your interest! We'll be in touch soon.");
-	$("#beta-full, #pop-up-overlay").hide(500);
+	$("#beta-full, #pop-up-overlay").fadeOut(500);
 });

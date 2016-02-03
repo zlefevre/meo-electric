@@ -243,6 +243,7 @@ footer {
 	z-index: 10;
 	padding: 20px 30px;
 	max-width: 450px;
+    max-height: 100vh;
 }
 
 #beta-full label {
@@ -407,6 +408,9 @@ footer {
 	#section1 h2 {
 		margin: 10px 15px;
 	}
+    #beta-full {
+        max-width: 600px;
+    }
 	#beta-full input {
 		margin: 5px 0;
 		font-size: 15px;
