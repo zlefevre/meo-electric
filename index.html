@@ -50,21 +50,22 @@
 
 	<div id="pop-up-overlay"></div>
 	</div>
-	<form id="beta-full">
-		<p>HackSignal is currently setting up beta platforms at college and high school hackathons. If you organize an event, we want to hear from you! It's <span class="green">100% free!</span></p>
+	<form action="https://docs.google.com/forms/d/1GQ8R0Q1CkQ8AqSptMvEK5TajPDbbI7FWv1xc_LUFAxo/formResponse" method="POST" id="beta-full" target="no-target" onsubmit="">
+		<p>Help us electrify transportation in Canada.</p>
 		<label for="name">Name</label>
-		<input type="text" name="name" required><br>
+		<input type="text" name="entry.1654899224" required><br>
 		<label for="email">Email</label>
-		<input id="full-email" type="email" name="email"><br>
-		<label for="event">Event name</label>
-		<input type="text" name="event" required><br>
-		<label for="date">Event date</label>
-		<input type="date" name="date" required><br>
-		<label for="site">Event website</label>
-		<input type="url" name="site" required><br>
-		<label for="hackers">Number of hackers</label>
-		<input type="number" name="hackers" required><br>
-		<div id="submit-contain"><input id="beta-submit" type="submit" value="Get in touch"></div>
+		<input id="full-email" type="email" name="entry.809081272" required><br>
+        <label style="display:block;padding:10px 0;">How can we help you?</label>
+        <input type="checkbox" name="entry.1554394051" value="I want to join the team" id="group_1554394051_1"> I want to join the team<br>
+        <input type="checkbox" name="entry.1554394051" value="I have a business opportunity" id="group_1554394051_2"> I have a business opportunity<br>
+        <input type="checkbox" name="entry.1554394051" value="I need a charger" id="group_1554394051_3"> I need a charger<br>
+        <input type="checkbox" name="entry.1554394051" value="I want to support EVs in Canada" id="group_1554394051_4"> I want to support EVs in Canada<br>
+        <input type="checkbox" name="entry.1554394051" value="I want to learn more" id="group_1554394051_5"> I want to learn more<br>
+        <input type="checkbox" name="entry.1554394051" value="I just want to say hi" id="group_1554394051_6"> I just want to say hi<br><br> 
+		<label style="padding:40px 0;">What's up?</label>
+		<textarea style="display:block;width:100%;max-width:100%;" name="entry.549395312" required></textarea><br>
+		<div id="submit-contain"><input id="beta-submit" name="submit" type="submit" value="Get in touch" onclick="postContactToGoogle()"></div>
 	</form>
 	<section id="section5">
 		<h4>Meo Electric is accelerating the electrification of transportation by establishing a nation-wide network of electric vehicle charging stations. We offer a turnkey sales and installation solution for EV charging units.</h4>
@@ -72,12 +73,37 @@
 	<footer>
 		<p class="bragging">
 		Follow us on 
-		<a href='http://github.com/djeik'>Facebook</a>
+		<a href='https://facebook.com/MeoElectric'>Facebook</a>
 		and
-		<a href='http://github.com/arirawr'>Ari VanIderstine</a>
+		<a href='https://twitter.com/MeoElectric'>Twitter</a>!
 		<br>
 		</p>
 	</footer>
 	<script type="text/javascript" src="scripts.js"></script>
+    <script>
+    function postContactToGoogle() {
+        var email = $('#Email').val();
+        var first = $('#First').val();
+        var last = $('#Last').val();
+        var company = $('#Company').val();
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/1GQ8R0Q1CkQ8AqSptMvEK5TajPDbbI7FWv1xc_LUFAxo/formResponse",
+                data: { "entry_1402836733": email,
+                "entry_1874720748": first, "entry_2092106103":
+                last, "entry_944373055": company },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        window.location.replace("ThankYou.html");
+                    },
+                    200: function () {
+                        window.location.replace("ThankYou.html");
+                    }
+                }
+            });
+    }
+</script>
 </body>
 </html>
