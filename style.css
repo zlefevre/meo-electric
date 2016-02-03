@@ -370,6 +370,10 @@ footer {
     margin: 10px 15px;
 }
 
+.bragging a {
+    color: #222;
+}
+
 @media screen and (max-width: 960px) {
 	#beta-interest {
 		-webkit-flex-direction: column;
