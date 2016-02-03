@@ -108,6 +108,7 @@ h4 {
 	background-color: #BADA55;
 	padding: 0;
     width: 100%;
+    margin-top: 30px;
 }
 
 #section3 {
@@ -176,7 +177,7 @@ footer {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	margin: 20px 0 0 0;
+	margin: 0;
 	padding: 20px 10px;
     color: white;
 }
