@@ -230,6 +230,7 @@ header ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 3em;
 }
 
@@ -555,5 +556,8 @@ footer {
 	}
 	#about h4 {
 		font-size: 18px;
+	}
+	section {
+		padding: 1em;
 	}
 }
