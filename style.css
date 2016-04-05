@@ -547,4 +547,7 @@ footer {
 		margin-left: none;
 		margin-right: none;
 	}
+	.logotype {
+		margin-right: 15px;
+	}
 }
