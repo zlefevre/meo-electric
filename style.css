@@ -544,8 +544,8 @@ footer {
 		padding-bottom: 30px;
 	}
 	.event {
-		margin-left: none !important;
-		margin-right: none !important;
+		margin: 0;
+		margin-bottom: 20px;
 	}
 	.logotype {
 		margin-right: 15px;
