@@ -543,4 +543,8 @@ footer {
 	.service {
 		padding-bottom: 30px;
 	}
+	.event {
+		margin-left: none;
+		margin-right: none;
+	}
 }
