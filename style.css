@@ -537,4 +537,10 @@ footer {
 	.services-container {
 		flex-direction: column;
 	}
+	.service img {
+		height: 60vw;
+	}
+	.service {
+		padding-bottom: 30px;
+	}
 }
