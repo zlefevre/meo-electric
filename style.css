@@ -534,7 +534,7 @@ footer {
 	header ul {
 		display: none;
 	}
-	.services-container {
+	.services-container, .events-container {
 		flex-direction: column;
 	}
 	.service img {
