@@ -1,14 +1,9 @@
-@font-face {
-    font-family: Graphik;
-    src: url(fonts/Graphik-Light.otf);
-}
-
 * {
 	box-sizing: border-box;
 }
 
 body {
-  font-family: "Graphik", "Lato", "TeX Gyre Adventor";
+  font-family: "Ubuntu", "Lato", "TeX Gyre Adventor";
   font-weight: 300;
   color: #222;
   background-color: white;
@@ -304,7 +299,7 @@ footer {
 	border: 1px #ccc solid;
 	border-radius: 8px;
 	background-color: white;
-	font-family: "Graphik";
+	font-family: "Ubuntu";
 	margin: 0 20px;
 }
 
@@ -313,7 +308,7 @@ footer {
 	background-color: #222;
 	border: 1px #333 solid;
 	border-radius: 8px;
-	font-family: "Graphik";
+	font-family: "Ubuntu";
 	padding: 0 30px;
 	margin: 20px;
 	cursor: pointer;
@@ -365,7 +360,7 @@ footer {
 	margin: 10px 0;
 	border: 1px solid #ccc;
 	border-radius: 8px;
-	font-family: "Graphik";
+	font-family: "Ubuntu";
 	font-size: 18px;
 	padding: 5px;
 	box-shadow: #AECA36;
@@ -385,7 +380,7 @@ footer {
 	background-color: #222;
 	border: 1px #333 solid;
 	border-radius: 8px;
-	font-family: "Graphik";
+	font-family: "Ubuntu";
 	padding: 0 30px;
 	cursor: pointer;
 	color: #eee;
@@ -399,7 +394,7 @@ footer {
 	background-color: #222;
 	display: inline-block;
 	padding: 20px;
-	font-family: "Graphik";
+	font-family: "Ubuntu";
 	font-size: 20px;
 	border: none;
 	width: 150px;
