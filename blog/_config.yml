@@ -1,0 +1,57 @@
+# Site settings
+title: Meo Electric Blog
+email: hello@meoelectric.com
+description: > # this means to ignore newlines until "baseurl:"
+  Electric vehicle news and insights from Montréal and around the world. Get the latest on electric cars, government incentives, technological innovation, and electric vehicle charging.
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://meoelectric.com" # the base hostname & protocol for your site
+twitter_username: MeoElectric
+github_username:  arirawr
+
+# THEME-SPECIFIC CONFIGURATION
+theme:
+  title: Meo Electric
+  avatar: avatar.png
+  # Header and footer text
+  header_text: >
+     <p>Electric vehicle news and insights from Montréal and around the world. Get the latest on electric cars, government incentives, technological innovation, and electric vehicle charging.</p>
+  header_text_feature_image:
+  footer_text: >
+   Follow us on <a href="http://twitter.com/MeoElectric">Twitter</a> and <a href="http://facebook.com/MeoElectric">Facebook</a>
+
+  # Icons
+  rss: true
+  email_address: "hello@meoelectric.com" # Full email address, e.g. "sam@example.com"
+  facebook: "MeoElectric"
+  instagram: "meoelectric"
+  linkedin: "http://linkedin.com/Meo-Electric"
+  twitter: "MeoElectric"
+
+  # Scripts
+  google_analytics: "UA-64453343-1" # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname: "meoelectric"
+  katex: false # Enable if using math markup
+
+  # Localization strings
+  str_follow_on: "Join us on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next: "Next"
+  str_prev: "Prev"
+  str_continue_reading: "Read more"
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic"
+
+  # Post navigation
+  post_navigation: true
+
+gems: [jekyll-paginate]
+# PAGINATION
+paginate: 50
+paginate_path: "/:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: pygments
