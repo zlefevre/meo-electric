@@ -7,6 +7,7 @@
   <meta name="google-site-verification" content="yu9mMwlv_chw-a4q2JxeUOTObXsbuSPHnPAlB_USuM8" />
   <meta name="theme-color" content="#BADA55" />
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="img/icon/favicon.ico?v2">
   <title>
@@ -34,54 +35,17 @@
 </head>
 
 <body>
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId: '566236136869039',
-        xfbml: true,
-        version: 'v2.5'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {
-        return;
-      }
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "http://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <div id="social">
-    <div class="fb-like" data-href="https://facebook.com/MeoElectric" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
-    <a href="https://twitter.com/MeoElectric" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @MeoElectric</a>
-    <script>
-      ! function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          p = /^http:/.test(d.location) ? 'http' : 'https';
-        if (!d.getElementById(id)) {
-          js = d.createElement(s);
-          js.id = id;
-          js.src = p + '://platform.twitter.com/widgets.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }
-      }(document, 'script', 'twitter-wjs');
-    </script>
-  </div>
-
   <header>
     <a class="logotype" href="#">
       <img src="img/bolt-transparent.png">
       <span><strong>Meo</strong> Electric</span>
     </a>
     <ul>
-      <li><a href="#about">about</a></li>
       <li><a href="#services">services</a></li>
-      <li><a href="#events">events</a></li>
       <li><a href="#contact">contact</a></li>
-      <li><a class="green" href="http://blog.meoelectric.com">blog</a></li>
+      <li><a href="http://blog.meoelectric.com">blog</a></li>
+      <li><a href="http://meoelectric.com/estimate">estimate</a></li>
+      <li><a id="estimate-header" href="http://meoelectric.com/estimate">1 (800) 636-0986</a></li>
     </ul>
   </header>
 
@@ -103,25 +67,25 @@
           </div>
           <div class="highlight-2">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, doloremque aperiam. Perspiciatis inventore, tempora deleniti.</p>
-            <a id="estimate" href="http://meoelectric.com/estimate"><h2>ESTIMATE BRO</h2></a>
+            <a id="estimate" href="http://meoelectric.com/estimate"><h2>Install a charger</h2></a>
           </div>
         </section>
 
         <section id="newsection">
-          <h2>our <span class="green">services</span></h2>
+          <h2>Our Services</h2>
           <div class="services-container">
             <div class="service">
-              <img src="img/station.png" />
+              <img src="img/hardware.png" />
               <h3>EV Charger Sales</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas, eveniet. Totam, odio corporis rerum sit quisquam molestias, ea perferendis!</p>
             </div>
             <div class="service">
-              <img src="img/electrician.png" />
+              <img src="img/installation.png" />
               <h3>Hardware Installation</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas, eveniet. Totam, odio corporis rerum sit quisquam molestias, ea perferendis!</p>
             </div>
             <div class="service">
-              <img src="img/happy.png" />
+              <img src="img/service.png" />
               <h3>Data Monitoring</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, quas, eveniet. Totam, odio corporis rerum sit quisquam molestias, ea perferendis!</p>
             </div>
@@ -136,13 +100,38 @@
             <input id="interest-submit" name="submit" type="submit" value="Electrify" />
           </form>
         </section>
+
         <footer>
           <p class="bragging">
-            Follow us on
-            <a href='https://facebook.com/MeoElectric'>Facebook</a> and
-            <a href='https://twitter.com/MeoElectric'>Twitter</a>!
-            <br>
+            &copy;2016 Meo Electric Inc.
           </p>
+          <ul class="social-footer">
+            <li>
+              <a href="https://www.facebook.com/MeoElectric" title="Meo Electric Facebook">
+                <i class="fa fa-fw fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/{{ site.theme.twitter }}" title="{{ site.theme.str_follow_on }} Twitter">
+                <i class="fa fa-fw fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://plus.google.com/{{ site.theme.google_plus }}" title="{{ site.theme.str_follow_on }} Google+">
+                <i class="fa fa-fw fa-google-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://instagram.com/{{ site.theme.instagram }}" title="{{ site.theme.str_follow_on }} Instagram">
+                <i class="fa fa-fw fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="{{ site.theme.linkedin }}" title="{{ site.theme.str_follow_on }} LinkedIn">
+                <i class="fa fa-fw fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
         </footer>
 
       </div>
