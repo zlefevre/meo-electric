@@ -342,7 +342,7 @@ footer {
   width: 300px;
   font-size: 16px;
   border: 1px #ccc solid;
-  border-radius: 8px;
+  border-radius: 3px;
   background-color: white;
   font-family: "Ubuntu";
   margin: 5px 20px;
@@ -354,7 +354,7 @@ textarea {
   width: 600px;
   font-size: 16px;
   border: 1px #ccc solid;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: white;
   font-family: "Ubuntu";
   margin: 5px 20px;
@@ -362,9 +362,9 @@ textarea {
 
 #interest-submit {
   height: 50px;
-  background-color: #222;
-  border: 1px #333 solid;
-  border-radius: 8px;
+  background-color: #2F363D;
+  border: none;
+  border-radius: 2px;
   font-family: "Ubuntu";
   padding: 0 30px;
   margin: 20px;
