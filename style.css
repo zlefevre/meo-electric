@@ -623,7 +623,7 @@ footer {
     text-align: center;
   }
   h2 {
-    font-size: 6vw;
+    font-size: 7vw;
     text-align: center;
   }
   #logo {
@@ -643,6 +643,13 @@ footer {
     font-size: 2em;
     padding: 30px;
   }
+  .form-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-flex textarea {
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width:640px) {
@@ -650,9 +657,6 @@ footer {
     display: none;
   }
   .services-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   .service img {
@@ -660,6 +664,8 @@ footer {
   }
   .service {
     padding-bottom: 30px;
+    display: block;
+    text-align: center;
   }
   #events .event {
     margin: 0;
@@ -668,11 +674,11 @@ footer {
   .logotype {
     margin-right: 15px;
   }
-  h2 {
-    font-size: 12vw;
-  }
   #section1 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+  #section1 h3 {
+    font-size: 1em;
   }
   #highlights {
     -webkit-box-orient: vertical;
@@ -692,5 +698,11 @@ footer {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 0;
+  }
+  footer {
+    padding: 20px;
+  }
+  .social-footer {
+    padding-left: 0;
   }
 }
