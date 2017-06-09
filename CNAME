@@ -1,1 +1,3 @@
-meoelectric.com
+#meoelectric.com
+
+Redirect 301 / http://staging.meo.tech/staging/
