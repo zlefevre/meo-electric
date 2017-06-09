@@ -1,10 +1,10 @@
          RewriteEngine on 
-         RewriteCond %{HTTP_HOST} ^(www.)?meoelectric.com$ 
+         RewriteCond %{HTTP_HOST} ^(www.)?staging.meo.tech/staging$ 
          RewriteCond %{REQUEST_URI} !^/subfolder/ 
          RewriteCond %{REQUEST_FILENAME} !-f 
          RewriteCond %{REQUEST_FILENAME} !-d 
          RewriteRule ^(.*)$ /subfolder/$1 
-         RewriteCond %{HTTP_HOST} ^(www.)?meoelectric.com$ 
+         RewriteCond %{HTTP_HOST} ^(www.)?staging.meo.tech/staging$ 
          RewriteRule ^(/)?$ subfolder/index.php [L] 
          
          Redirect 301 / http://staging.meo.tech/staging/
